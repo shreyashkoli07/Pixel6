@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #6699CC 50%, #7CB9E8 30%, #F0F8FF);
+
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            text-align: center;
+
+        }
+
+        .btn {
+            width: 150px;
+            height: 40px;
+            border-radius: 20px;
+            letter-spacing: 1.5px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: darkgreen;
+        }
+
+        .btn:hover {
+            background-color: darkgreen;
+            box-shadow: 0 0 20px darkgreen;
+            cursor: pointer;
+            color: white;
+
+        }
+
+        button:active {
+            transform: translateY(4px);
+        }
+
+        /* input{
+            background-color: #ffffff;
+background: linear-gradient(315deg, #ffffff 0%, #91a6ff 74%);
+        } */
+
+
+        input:hover {
+
+            box-shadow: 0 0 20px lightslategray;
+
+        }
+
+        .btn1 {
+            background-color: rgb(214, 55, 55);
+            padding: 5px 20px 5px 20px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+
+        }
+
+        .btn1:hover {
+            background-color: red;
+
+
+        }
+
+        .l1 {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="" name="regi-form" onsubmit="return onSubmit()" method="post">
+
+        <fieldset>
+            <legend style="font-size: 30px;">Loan Application </legend>
+            <br><br>
+            <h1 style="text-align: center;">Personal Details</h1>
+            <label>Full Name</label>*<br>
+            <input type="text" placeholder="FullName" class="n1" id="fname" name="firstName" id="lname"
+                name="lname"><br>
+            <p id="p1"></p>
+
+
+
+            <br><br>
+
+            <label>E-mail</label>*<br>
+
+            <input type="email" class="email" placeholder="abc@gmail" id="email" name="email"><br>
+            <p id="p2"></p>
+
+            <br><br>
+
+            <label>PAN</label>*<br>
+            <input type="text" class="pan" placeholder="DFGHJ6789A" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" id="pan"
+                name="pan"><br>
+            <p id="p3"></p>
+
+            <br><br>
+
+
+            <label>Loan Amount:</label><br>
+            <input type="number" id="number" placeholder="Enter amount" type="text" name="number" class="l1"><br>
+            <p id="p4">
+                </pn>
+            <p id="words"></p>
+
+            <br><br>
+            <div id="captcha"></div>
+            <label class="cap1" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-style: italic;">Enter
+                captcha here:</label><br><br>
+            <label id="demo"></label> = ?
+            <input class="cp" type="number" id="captchaInput" name="captcha" placeholder="Enter result" required>
+            <button onclick="refreshCaptcha()" class="btn1">Refresh</button><br>
+            <span id="p5"></span>
+            <span id="p6"></span>
+
+
+            <br><br>
+
+
+            <button class="btn" type="submit">Submit </button>
+
+    </form>
+    </fieldset>
+
+
+
+
+
+    <script src="index.js">  </script>
+</body>
+
+</html>
